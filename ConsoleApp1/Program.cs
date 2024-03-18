@@ -7,7 +7,7 @@ namespace ConsoleApp1
         static void Main(string[] args){
            
             int[] a = [-12, 6, -99, 2, 14, -4, 2];
-            countAv(a);
+            wrMxValArray(a);
         }  
         static void countAv(int[] b){
             float sum = 0;
@@ -16,6 +16,16 @@ namespace ConsoleApp1
             }
             Console.WriteLine("The avg of the given array is: {0}", sum/b.Length);
         
+        }
+         static void wrMxValArray(int[] d){
+            int max = d[0];
+ 
+            for(int a = 0; a < d.Length; a++){
+                if (max <= d[a])
+                    max = d[a];
+            }
+ 
+            Console.WriteLine(max);
         }
     }
 }
