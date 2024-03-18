@@ -9,12 +9,12 @@ namespace ConsoleApp1
             int[] a = [-12, 6, -99, 2, 14, -4, 2];
             wrMaxValArray(a);
         }  
-        static void countAv(int[] b){
-            float sum = 0;
+        static void countAvgg(int[] b){
+            float sumb = 0;
             for(int a = 0; a < b.Length; a++){
-                sum += b[a];
+                sumb += b[a];
             }
-            Console.WriteLine("The avg of the given array is: {0}", sum/b.Length);
+            Console.WriteLine("The avg of the given array is: {0}", sumb/b.Length);
         
         }
          static void wrMaxValArray(int[] d){
